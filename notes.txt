@@ -1,0 +1,7 @@
+При клонировании репозитория произошла ошибка
+fatal: unable to access 'https://...':
+SSL certificate problem: unable to get local issuer certificate
+
+Решение найдено:
+https://serverfault.com/questions/823018/gitlab-git-clone-using-https-unable-to-get-local-issuer-certificate
+git config --global http.sslVerify false
