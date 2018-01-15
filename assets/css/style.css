@@ -1,11 +1,50 @@
-body {
-    height: 5000px;
+p {
+    font-size: 16px;
 }
 
-p {
-    font-size: 18px;
+h1 {
+    text-transform: uppercase;
 }
 
 .main {
     padding-top: 50px;
+}
+
+section {
+    padding-top: 50px;
+}
+
+
+/*ABOUT*/
+
+.about .avatar {
+    display: inline-block;
+    height: 220px;
+}
+
+.about .adress {
+    margin-top: 50px;
+}
+
+
+/*MEDIA*/
+
+@media (max-width: 768px) {
+    .about h1, .about .adress{
+        text-align: center;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 992px) {}
+
+@media (min-width: 992px) and (max-width: 1200px) {
+    .about .avatar {
+        height: 250px;
+    }
+}
+
+@media (min-width: 1200px) {
+    .about .avatar {
+        height: 250px;
+    }
 }
