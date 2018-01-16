@@ -23,6 +23,10 @@ section {
 
 /*ABOUT*/
 
+.about {
+    height: 500px;
+}
+
 .about .avatar {
     display: inline-block;
     height: 220px;
@@ -30,6 +34,13 @@ section {
 
 .about .adress {
     margin-top: 50px;
+}
+
+.about .block-skill {
+    height: 200px;
+    background-image: url(../img/web3.png);
+    background-size: 200%;
+    background-position: 50px 0;
 }
 
 /*WORKS*/
