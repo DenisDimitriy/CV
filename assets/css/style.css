@@ -24,7 +24,6 @@ section {
 /*ABOUT*/
 
 .about {
-    height: 500px;
 }
 
 .about .avatar {
@@ -36,11 +35,32 @@ section {
     margin-top: 50px;
 }
 
+.skills-row {
+    margin: 40px 0 40px;
+}
+
 .about .block-skill {
-    height: 200px;
     background-image: url(../img/web3.png);
-    background-size: 200%;
-    background-position: 50px 0;
+    background-size: 315px;
+    height: 125px;
+    width: 135px;
+    margin: 20px auto 0;
+}
+
+.about .block-skill.html {
+    background-position: 15px 0;
+}
+
+.about .block-skill.css {
+    background-position: 120px 0;
+}
+
+.about .block-skill.js {
+    background-position: 225px 0;
+}
+
+.about .progress {
+    max-width: 250px;
 }
 
 /*WORKS*/
