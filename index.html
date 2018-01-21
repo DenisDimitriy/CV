@@ -12,6 +12,7 @@
     <link rel="stylesheet" href="./assets/libs/bootstrap-3.3.2-dist/css/bootstrap.css">
     <link rel="stylesheet" href="./assets/libs/bootstrap-3.3.2-dist/css/bootstrap-theme.css">
 
+    <link rel="stylesheet" href="./assets/css/foxhover.css">
     <link rel="stylesheet" href="./assets/css/style.css">
 </head>
 
@@ -34,13 +35,13 @@
                         <a href="#about">About</a>
                     </li>
                     <li>
-                        <a href="#technologies">Technologies</a>
+                        <a href="#skills">Skills</a>
+                    </li>
+                    <li>
+                        <a href="#Works">Works</a>
                     </li>
                     <li>
                         <a href="#tools">Tools</a>
-                    </li>
-                    <li>
-                        <a href="#contacts">Contacts</a>
                     </li>
                 </ul>
                 <ul class="nav navbar-nav navbar-right">
@@ -61,7 +62,7 @@
         <section class="about">
             <div class="container">
                 <!--row-->
-                <div class="row">
+                <div class="row contacts">
                     <div class="text-center col-xs-12 col-sm-offset-1 col-sm-4 col-md-offset-1 col-md-4 col-lg-offset-1 col-lg-3 ">
                         <img class="avatar img-circle img-responsive" src="./assets/img/avatar.jpg" alt="avatar">
                     </div>
@@ -90,33 +91,71 @@
                 </div>
                 <!--/row-->
                 <!--row-->
-                <div class="row skills-row">
+                <div class="row resume">
                     <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4">
-                        <div class="block-skill html"></div>
-                        <div class="progress center-block">
-                            <div class="progress-bar progress-bar-danger" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"
-                                style="width: 90%">
-                                <span>90%</span>
-                            </div>
-                        </div>
+                        <p>
+                            <em>Knowledge of web technologies:</em>
+                            <strong>
+                                <br>HTML,
+                                <br>СSS,
+                                <br>Javascript,
+                                <br>jQuery,
+                                <br>Bootstrap,
+                                <br>Git.</strong>
+                        </p>
+                        <p>
+                            <em>Tools in use:</em>
+                            <strong>
+                                <br>VS Code,
+                                <br>Cloud 9,
+                                <br>Sublime Text,
+                                <br>Chrome Dev Tools,
+                                <br>Photoshop.</strong>
+                        </p>
                     </div>
                     <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4">
-                        <div class="block-skill css"></div>
-                        <div class="progress center-block">
-                            <div class="progress-bar progress-bar-info" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"
-                                style="width: 80%">
-                                <span>80%</span>
-                            </div>
-                        </div>
+                        <p>
+                            <em>Languages:</em>
+                            <strong>
+                                <br>Русский - свободное владение,
+                                <br>Українська - вільне володіння,
+                                <br>English - intermediate.</strong>
+                        </p>
+                        <p>
+                            <em>Trainings:</em>
+                            <strong>
+                                <br>HTML Academy (Base intensity)</strong>
+                            <!--<br>(making of valid cross-browser web pages with adaptive design);-->
+                            <strong>
+                                <br>Tutorial learn.javascript.ru</strong>
+                            <!--<br>(skills of solving problems in Javascript language, practice of writing scripts, working with
+                            DOM).-->
+                        </p>
                     </div>
                     <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4">
-                        <div class="block-skill js"></div>
-                        <div class="progress center-block">
-                            <div class="progress-bar progress-bar-warning" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"
-                                style="width: 75%">
-                                <span>75%</span>
-                            </div>
-                        </div>
+                        <p>
+                            <em>Education:</em>
+                            <strong>
+                                <br>Higher technical education.</strong>
+                        </p>
+                        <p>
+                            <em>Theoretical basics:</em>
+                            <strong>
+                                <br>С++,
+                                <br>PHP,
+                                <br>CMS WordPress,
+                                <br>OOP.</strong>
+                        </p>
+                        <p>
+                            <em>Driver's license:</em>
+                            <strong>
+                                <br>B category.</strong>
+                        </p>
+                        <p>
+                            <em>Soft skills:</em>
+                            <strong>
+                                <br>Teamwork, communication skills, learning ability.</strong>
+                        </p>
                     </div>
                 </div>
                 <!--/row-->
@@ -124,53 +163,116 @@
         </section>
         <!-- /About -->
 
+        <!-- Skills -->
+        <section class="skills">
+            <h2 class="text-center">Skills</h2>
+            <div class="container">
+                <!--row-->
+                <div class="row">
+                    <div class="col-xs-6 col-sm-4 col-md-4 col-lg-4">
+                        <div class="block-skill html"></div>
+                        <div class="progress center-block">
+                            <div class="progress-bar html" role="progressbar" aria-valuenow="95" aria-valuemin="0" aria-valuemax="100" style="width: 95%">
+                                <span>95%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xs-6 col-sm-4 col-md-4 col-lg-4">
+                        <div class="block-skill css"></div>
+                        <div class="progress center-block">
+                            <div class="progress-bar css" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100" style="width: 90%">
+                                <span>90%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xs-6 col-sm-4 col-md-4 col-lg-4">
+                        <div class="block-skill js"></div>
+                        <div class="progress center-block">
+                            <div class="progress-bar js" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100" style="width: 80%">
+                                <span>80%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xs-6 col-sm-4 col-md-4 col-lg-4">
+                        <div class="block-skill bootstrap"></div>
+                        <div class="progress center-block">
+                            <div class="progress-bar bootstrap" role="progressbar" aria-valuenow="65" aria-valuemin="0" aria-valuemax="100" style="width: 65%">
+                                <span>65%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xs-6 col-sm-4 col-md-4 col-lg-4">
+                        <div class="block-skill jquery"></div>
+                        <div class="progress center-block">
+                            <div class="progress-bar jquery" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style="width: 75%">
+                                <span>75%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xs-6 col-sm-4 col-md-4 col-lg-4">
+                        <div class="block-skill git"></div>
+                        <div class="progress center-block">
+                            <div class="progress-bar git" role="progressbar" aria-valuenow="55" aria-valuemin="0" aria-valuemax="100" style="width: 55%">
+                                <span>55%</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!--/row-->
+            </div>
+        </section>
+        <!-- /Skills -->
 
-        <!-- My works -->
+
+        <!-- Works -->
         <section class="works">
-            <h2 class="text-center">My Works</h2>
+            <h2 class="text-center">Works</h2>
             <div class="container">
                 <div class="row">
-                    <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4">
-
+                    <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4">
+                        <div class="center-block effect eff-27">
+                            <img src="./assets/img/FindThePair.png" alt="Your own text" />
+                            <div class="caption">
+                                <h4>Find the pair</h4>
+                                <div class="text">
+                                    <p>A simple game.
+                                        <br>To win it, you have to find all pairs of identical pictures as quickly as it possible.</p>
+                                </div>
+                                <a class="btn" href="https://github.com/DenisDimitriy/FindThePair" target="_blank" title="Download">Download from Github</a>
+                            </div>
+                        </div>
                     </div>
-                    <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4">
-
+                    <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4">
+                        <div class="center-block effect eff-26">
+                            <img src="./assets/img/TranslationBureau.png" alt="Your own text" />
+                            <div class="caption">
+                                <h4>Mini blog</h4>
+                                <div class="text">
+                                    <p>A simple blog. <br>Allows you to easily add short articles without knowledge of programming.</p>
+                                </div>
+                                <a class="btn" href="https://github.com/DenisDimitriy/translationbureau" target="_blank" title="Download">Download from Github</a>
+                            </div>
+                        </div>
                     </div>
-                    <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4">
-
+                    <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4">
+                        <div class="center-block effect eff-23">
+                            <img src="./assets/img/Eurokrepeszh.png" alt="Your own text" />
+                            <div class="caption">
+                                <h4>Eurokrepesz</h4>
+                                <div class="text">
+                                    <p>A simple business card,
+                                        <br>for the distributor of Polish fasteners in Ukraine
+                                        .</p>
+                                </div>
+                                <a class="btn" href="https://github.com/DenisDimitriy/eurokrepesz" target="_blank" title="Download">Download from Github</a>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
         </section>
         <!-- /My works -->
 
-
-        <!-- Technologies -->
-        <section class="technologies">
-            <h2 class="text-center">Technologies</h2>
-            <div class="container">
-                <div class="row">
-                    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
-
-                        <p>Applying for a position:
-                            <strong>a front-end developer</strong>
-                        </p>
-
-                        <p>Knowledge of web technologies: HTML, СSS, Javascript, jQuery, Bootstrap, Git.</p>
-                        <p>Theoretical basics: RISC Assembler, С, С++, PHP, CMS WordPress, OOP.</p>
-                        <p> Programs in use: IDE WEBStorm, Cloud 9, Sublime Text, Chrome Dev Tools, Photoshop.</p>
-                        <p>Languages: Русский - свободное владение, Українська - вільне володіння, English - intermediate.</p>
-                        <p>Trainings: Base intensity HTML Academy (making of valid cross-browser web pages with adaptive design);
-                            Tutorial learn.javascript.ru (skills of solving problems in Javascript language, practice of
-                            writing scripts, working with DOM).</p>
-                        <p>Education: Higher technical education.</p>
-                        <p>Driver's license: B category.</p>
-                        <p>Soft skills: Teamwork, communication skills, learning ability.</p>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <!-- /Technologies -->
 
         <!-- Tools -->
         <section class="tools">

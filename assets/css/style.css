@@ -1,14 +1,10 @@
-/*GENERAL*/
+/*--------------------GENERAL--------------------*/
 
 p {
     font-size: 16px;
 }
 
-h1 {
-    text-transform: uppercase;
-}
-
-h2 {
+h1, h2 {
     text-transform: uppercase;
 }
 
@@ -16,14 +12,15 @@ h2 {
     padding-top: 50px;
 }
 
-section {
-    padding-top: 50px;
+
+/*--------------------ABOUT--------------------*/
+
+.about .row.contacts {
+    margin-top: 50px;
 }
 
-
-/*ABOUT*/
-
-.about {
+.about .row.resume {
+    margin-top: 30px;
 }
 
 .about .avatar {
@@ -35,54 +32,119 @@ section {
     margin-top: 50px;
 }
 
-.skills-row {
+
+/*--------------------SKILLS--------------------*/
+
+.skills {
+    margin-top: 50px;
+}
+
+.skills .row {
     margin: 40px 0 40px;
 }
 
-.about .block-skill {
-    background-image: url(../img/web3.png);
-    background-size: 315px;
+.skills .block-skill {
     height: 125px;
     width: 135px;
     margin: 20px auto 0;
 }
 
-.about .block-skill.html {
+.skills .block-skill.html {
+    background-image: url(../img/web3.png);
+    background-size: 315px;
     background-position: 15px 0;
 }
 
-.about .block-skill.css {
+.skills .block-skill.css {
+    background-image: url(../img/web3.png);
+    background-size: 315px;
     background-position: 120px 0;
 }
 
-.about .block-skill.js {
+.skills .block-skill.js {
+    background-image: url(../img/web3.png);
+    background-size: 315px;
     background-position: 225px 0;
 }
 
-.about .progress {
-    max-width: 250px;
+.skills .block-skill.bootstrap {
+    background-image: url(../img/bootstrap.png);
+    background-size: 150px;
+    background-position: -5px -20px;
 }
 
-/*WORKS*/
-
-.works {
-    background-color: rgb(99, 250, 85);
+.skills .block-skill.jquery {
+    background-image: url(../img/jquery.png);
+    background-size: 120px;
+    background-position: 5px 0;
 }
 
-.works .row div {
-    height: 100px;
-    background-color: aqua;
+.skills .block-skill.git {
+    background-image: url(../img/git.png);
+    background-size: 135px;
+    background-position: 0 -5px;
+}
+
+.skills .progress {
+    max-width: 200px;
+}
+
+.skills .progress-bar.html {
+    background-image: linear-gradient(to bottom, #d9534f 0%, #c9302c 100%);
+}
+
+.skills .progress-bar.css {
+    background-image: linear-gradient(to bottom, #5bc0de 0%, #31b0d5 100%);
+}
+
+.skills .progress-bar.js {
+    background-image: linear-gradient(to bottom, #f0ad4e 0%, #ec971f 100%);
+}
+
+.skills .progress-bar.bootstrap {
+    background-image: linear-gradient(to bottom, rgb(146, 107, 204) 0%, #62488A 100%);
+}
+
+.skills .progress-bar.jquery {
+    background-image: linear-gradient(to bottom, rgb(76, 135, 177) 0%, #0868AC 100%);
+}
+
+.skills .progress-bar.git {
+    background-image: linear-gradient(to bottom, rgb(240, 122, 101) 0%, #F05033 100%);
 }
 
 
+/*--------------------WORKS--------------------*/
+
+.works .row {
+    margin: 30px 0 50px;
+}
+
+.works .effect {
+    width: auto;
+    max-width: 400px;
+}
+
+.works .effect img {
+    margin: 0 auto;
+}
+
+.works .effect:before,
+.effect:after {
+    background-color: rgba(0, 0, 0, 0.8);
+}
 
 
-
-/*MEDIA*/
+/*--------------------MEDIA--------------------*/
 
 @media (max-width: 768px) {
-    .about h1, .about .adress{
+    .about h1,
+    .about .adress {
         text-align: center;
+    }
+
+    .works .effect {
+        margin-top: 20px;
     }
 }
 
