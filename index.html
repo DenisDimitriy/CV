@@ -16,7 +16,7 @@
     <link rel="stylesheet" href="./assets/css/style.css">
 </head>
 
-<body>
+<body data-spy="scroll" data-target=".navbar-scrolled">
     <!-- Fixed navbar -->
     <div class="navbar navbar-default navbar-fixed-top navbar-inverse" role="navigation">
         <div class="container">
@@ -28,9 +28,10 @@
                     <span class="icon-bar"></span>
                 </button>
                 <a class="navbar-brand" href="#">Denis Dimitriu</a>
+                <a href="./index-ru.html/">RU</a>
             </div>
-            <div class="navbar-collapse collapse">
-                <ul class="nav navbar-nav">
+            <div class="navbar-collapse collapse navbar-scrolled">
+                <ul class="nav navbar-nav nav-tabs navbar-right">
                     <li class="active">
                         <a href="#about">About</a>
                     </li>
@@ -38,15 +39,10 @@
                         <a href="#skills">Skills</a>
                     </li>
                     <li>
-                        <a href="#Works">Works</a>
+                        <a href="#works">Works</a>
                     </li>
                     <li>
                         <a href="#tools">Tools</a>
-                    </li>
-                </ul>
-                <ul class="nav navbar-nav navbar-right">
-                    <li>
-                        <a href="./index-ru.html/">RU</a>
                     </li>
                 </ul>
             </div>
@@ -59,7 +55,7 @@
     <div class="main">
 
         <!-- About -->
-        <section class="about">
+        <section class="about" id="about">
             <div class="bg-opacity">
                 <div class="container">
                     <!--row-->
@@ -166,9 +162,9 @@
         <!-- /About -->
 
         <!-- Skills -->
-        <section class="skills">
-            <h2 class="text-center">Skills</h2>
+        <section class="skills" id="skills">
             <div class="container">
+                <h2 class="text-center">Skills</h2>
                 <!--row-->
                 <div class="row">
                     <div class="col-xs-6 col-sm-4 col-md-4 col-lg-4">
@@ -178,6 +174,8 @@
                                 <span>95%</span>
                             </div>
                         </div>
+                        <P>I have knowledge of HTML on the level of making the cross-browser valid web page, landing-pages,
+                            site templates using the capabilities of modern web technologies standards</P>
                     </div>
                     <div class="col-xs-6 col-sm-4 col-md-4 col-lg-4">
                         <div class="block-skill css"></div>
@@ -186,14 +184,24 @@
                                 <span>90%</span>
                             </div>
                         </div>
+                        <P>Skilful use of CSS capabilities allows me to make stylized animated web pages based on psd layouts
+                            with pixel-to-pixel accuracy</P>
                     </div>
+
+
+                    <!-- Add the extra clearfix for only the required viewport -->
+                    <div class="clearfix visible-xs"></div>
+
                     <div class="col-xs-6 col-sm-4 col-md-4 col-lg-4">
                         <div class="block-skill js"></div>
                         <div class="progress center-block">
-                            <div class="progress-bar js" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100" style="width: 80%">
-                                <span>80%</span>
+                            <div class="progress-bar js" role="progressbar" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100" style="width: 85%">
+                                <span>85%</span>
                             </div>
                         </div>
+                        <P>The logic description of the web page behavior using the principles of OOP, full control over the
+                            DOM-elements, communication with the server through the AJAX and COMET technologies - all these
+                            provides Javascript</P>
                     </div>
                     <div class="col-xs-6 col-sm-4 col-md-4 col-lg-4">
                         <div class="block-skill bootstrap"></div>
@@ -202,7 +210,14 @@
                                 <span>65%</span>
                             </div>
                         </div>
+                        <p>I know how to use an advanced markup system, built-in web-pages components, basic JQuery plug-ins
+                            to create adaptive pages based on Bootstrap.</p>
                     </div>
+
+
+                    <!-- Add the extra clearfix for only the required viewport -->
+                    <div class="clearfix visible-xs"></div>
+
                     <div class="col-xs-6 col-sm-4 col-md-4 col-lg-4">
                         <div class="block-skill jquery"></div>
                         <div class="progress center-block">
@@ -210,6 +225,8 @@
                                 <span>75%</span>
                             </div>
                         </div>
+                        <p>A lot of plug-ins based on JQuery can easily be connected to the developed web page. In addition
+                            using this library you can greatly simplify and shorten the code written in pure language javascript.</p>
                     </div>
                     <div class="col-xs-6 col-sm-4 col-md-4 col-lg-4">
                         <div class="block-skill git"></div>
@@ -218,6 +235,8 @@
                                 <span>55%</span>
                             </div>
                         </div>
+                        <p>This distributed version control system helps me to not loose intermediate changes in the developed
+                            code, to write code remotely wherever I go, to collaborate with partners.</p>
                     </div>
                 </div>
                 <!--/row-->
@@ -227,9 +246,10 @@
 
 
         <!-- Works -->
-        <section class="works">
-            <h2 class="text-center">Works</h2>
+        <section class="works" id="works">
             <div class="container">
+                <h2 class="text-center">Works</h2>
+                <!--row-->
                 <div class="row">
                     <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4">
                         <div class="center-block effect eff-27">
@@ -272,15 +292,16 @@
                         </div>
                     </div>
                 </div>
+                <!--/row-->
             </div>
         </section>
         <!-- /My works -->
 
 
         <!-- Tools -->
-        <section class="tools">
-            <h2 class="text-center">Tools</h2>
+        <section class="tools" id="tools">
             <div class="container">
+                <h2 class="text-center">Tools</h2>
                 <!--row-->
                 <div class="row">
                     <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4">
@@ -311,8 +332,18 @@
     <!-- /Main wrapper -->
 
 
+    <!-- Hiden elements -->
+
+    <div id="toTop"></div>
+
+    <!-- /Hiden elements -->
+
+
     <script src="./assets/libs/jquery-3.2.1/jquery-3.2.1.js"></script>
     <script src="./assets/libs/bootstrap-3.3.2-dist/js/bootstrap.js"></script>
+
+    <script src="./assets/js/script.js"></script>
+
 </body>
 
 </html>
