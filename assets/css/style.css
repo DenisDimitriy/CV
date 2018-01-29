@@ -78,13 +78,6 @@ h2 {
     margin: 20px auto 0;
 }
 
-
-/*
-.skills p {
-    height: 200px;
-}
-*/
-
 .skills .block-skill.html {
     background-image: url(../img/web3.png);
     background-size: 315px;
@@ -127,26 +120,62 @@ h2 {
 
 .skills .progress-bar.html {
     background-image: linear-gradient(to bottom, #d9534f 0%, #c9302c 100%);
+    width: 0;
+}
+
+.skills .progress-bar.html.scrolled {
+    width: 95%;
+    transition: width 3s ease-out 0.1s;
 }
 
 .skills .progress-bar.css {
     background-image: linear-gradient(to bottom, #5bc0de 0%, #31b0d5 100%);
+    width: 0;
+}
+
+.skills .progress-bar.css.scrolled {
+    width: 90%;
+    transition: width 3s ease-out 0.1s;
 }
 
 .skills .progress-bar.js {
     background-image: linear-gradient(to bottom, #f0ad4e 0%, #ec971f 100%);
+    width: 0;
+}
+
+.skills .progress-bar.js.scrolled {
+    width: 85%;
+    transition: width 3s ease-out 0.1s;
 }
 
 .skills .progress-bar.bootstrap {
     background-image: linear-gradient(to bottom, rgb(146, 107, 204) 0%, #62488A 100%);
+    width: 0;
+}
+
+.skills .progress-bar.bootstrap.scrolled {
+    width: 75%;
+    transition: width 3s ease-out 0.1s;
 }
 
 .skills .progress-bar.jquery {
     background-image: linear-gradient(to bottom, rgb(76, 135, 177) 0%, #0868AC 100%);
+    width: 0;
+}
+
+.skills .progress-bar.jquery.scrolled {
+    width: 65%;
+    transition: width 3s ease-out 0.1s;
 }
 
 .skills .progress-bar.git {
     background-image: linear-gradient(to bottom, rgb(240, 122, 101) 0%, #F05033 100%);
+    width: 0;
+}
+
+.skills .progress-bar.git.scrolled {
+    width: 55%;
+    transition: width 3s ease-out 0.1s;
 }
 
 
@@ -172,10 +201,6 @@ h2 {
 
 
 /*--------------------TOOLS--------------------*/
-
-.tools {
-    margin-top: 50px;
-}
 
 .tools .row {
     margin: 40px 0 40px;
